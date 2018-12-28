@@ -1,5 +1,4 @@
 import React from 'react'
-import 'bootstrap/dist/css/bootstrap.css'
 
 import App from '../components/app'
 import SEO from '../components/seo'

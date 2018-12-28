@@ -74,7 +74,7 @@ export default class Example extends React.Component {
                   </DropdownMenu>
                 </UncontrolledDropdown>
                 <NavItem>
-                  <NavLink href="https://github.com/yuki2/react-dev-tools-app">
+                  <NavLink href="https://github.com/yuki2/dev-tools-app">
                     GitHub
                   </NavLink>
                 </NavItem>

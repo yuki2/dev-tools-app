@@ -1,6 +1,6 @@
 # Dev Tools
 
-Thir project provides trivial tools which developer sometimes use.
+This project provides trivial tools which developer sometimes use.
 
 https://react-dev-tools-app-default.firebaseapp.com/
 

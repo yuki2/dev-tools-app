@@ -1,24 +1,42 @@
-import React, { Component } from 'react'
-import logo from './logo.svg'
+import React from 'react'
+import { StaticQuery, graphql } from 'gatsby'
+import Img from 'gatsby-image'
 import './home.css'
 
-class Home extends Component {
-  render() {
-    return (
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Provide Tools which developer sometimes use by React</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    )
-  }
-}
+const Image = () => (
+  <StaticQuery
+    query={graphql`
+      query {
+        placeholderImage: file(relativePath: { eq: "gatsby-icon.png" }) {
+          childImageSharp {
+            fixed(width: 300, height: 300) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
+      }
+    `}
+    render={data => <Img fixed={data.placeholderImage.childImageSharp.fixed} />}
+  />
+)
+
+const Home = () => (
+  <div className="App-Container">
+    <header className="App-header">
+      <div className="App-logo">
+        <Image />
+      </div>
+      <p>Provide Tools which developer sometimes use by Gatsby</p>
+      <a
+        className="App-link"
+        href="https://www.gatsbyjs.org/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Learn Gatsby
+      </a>
+    </header>
+  </div>
+)
 
 export default Home

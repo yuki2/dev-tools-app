@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql, Link } from 'gatsby'
+import 'bootstrap/dist/css/bootstrap.css'
 
 import './app.css'
 
@@ -72,7 +73,7 @@ class Navigation extends PureComponent {
                 </DropdownMenu>
               </UncontrolledDropdown>
               <NavItem>
-                <NavLink href="https://github.com/yuki2/react-dev-tools-app">
+                <NavLink href="https://github.com/yuki2/dev-tools-app">
                   GitHub
                 </NavLink>
               </NavItem>
