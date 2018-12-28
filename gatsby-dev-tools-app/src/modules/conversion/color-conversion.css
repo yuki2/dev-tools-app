@@ -1,0 +1,36 @@
+.Color-Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Color-Header {
+  font-size: calc(10px + 2vmin);
+  color: white;
+  margin: 30px;
+}
+
+.Color-Contents {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  height: 300px;
+}
+
+.Color-Input-Container {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Color-Text {
+  color: white;
+}
+
+.Color-Area {
+  display: flex;
+  width: 50%;
+  background-color: white;
+}

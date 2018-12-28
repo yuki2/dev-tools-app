@@ -1,0 +1,41 @@
+.Encode-Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Encode-Header {
+  font-size: calc(10px + 2vmin);
+  color: white;
+  margin: 30px;
+}
+
+.Encode-Contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+
+.Encode-Textareas {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.Encode-Textarea {
+  width: 100%;
+  margin: 10px;
+}
+
+.Encode-Buttons {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+}
+
+.Encode-Button {
+  margin: 10px;
+}
