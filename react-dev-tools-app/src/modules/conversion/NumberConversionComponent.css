@@ -1,0 +1,24 @@
+.Number-Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.Number-Header {
+  font-size: calc(10px + 2vmin);
+  color: white;
+  margin: 30px;
+}
+
+.Number-Contents {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  width: 70%;
+}
+
+.Number-Text {
+  color: white;
+}
